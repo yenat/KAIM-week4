@@ -71,7 +71,30 @@ To run the analysis, you need to have Python installed. Follow these steps to se
 
 2. Open the Jupyter Notebook:
     ```bash
-    jupyter notebook customer_behavior_analysis.ipynb
+    jupyter notebook customer_behavior_analysis.ipynb 
+    jupyter notebook build_model.ipynb 
+    jupyter notebook lstm_model.ipynb
     ```
 
 3. Run the cells in the notebook to perform the analysis and visualize the results.
+
+## Key Findings
+### Customer Behavior Analysis:
+
+Promotional campaigns significantly boost sales.
+
+December shows peak sales due to holiday shopping.
+
+Sundays have the highest average sales compared to other weekdays.
+
+Sales drop on Fridays and Saturdays.
+
+Proximity to competitors has minimal impact on sales.
+
+A wider product assortment attracts more customers.
+
+### Sales Prediction:
+
+Machine Learning Model: The machine learning model achieved a training MSE of 0.0215 and a validation MSE of 0.1555. This indicates strong performance on the training data but a decline in accuracy on the validation data, suggesting potential overfitting.
+
+Deep Learning Model: The deep learning model using an LSTM network demonstrated effective learning from the data. The training and validation loss plots showed decreasing loss over epochs, indicating good generalization to new data.
